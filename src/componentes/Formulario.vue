@@ -138,13 +138,16 @@
         formState: {},
         formData: this.getInicialData(),
         
-        url:'https://6286bd1ee9494df61b2cbd05.mockapi.io/tp2/usuarios/usuarios',
+       url:this.$store.state.url
       }
     },
     methods: {
       enviar(){
-        let usuario= {...this.formData}
-        this.postUsuario(usuario)
+        this.$store.dispatch("addUsuarios",this.formData);
+        console.log({...this.formData})
+        this.formData = this.getInicialData()
+        this.formState._reset()
+      
       },
       getInicialData(){
         return{
@@ -178,7 +181,9 @@
 
     
     computed: {
-
+        obtenerPersonas(){  
+        return this.$store.state.personas
+      }
     },
     }
   }

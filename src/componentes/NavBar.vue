@@ -25,7 +25,11 @@
         <a class="nav-link" href="#">Tabla de Personas</a>
         </router-link>
       </li> 
-      
+      <li class="nav-item">
+         <router-link to="/comp-vuex">
+        <a class="nav-link" href="#">componenteVuex</a>
+        </router-link>
+      </li> 
         
       
       

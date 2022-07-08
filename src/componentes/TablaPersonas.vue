@@ -50,9 +50,9 @@
     },
     data () {
       return {
-        url:'https://6286bd1ee9494df61b2cbd05.mockapi.io/tp2/usuarios/usuarios' ,
+       /*  url:'https://6286bd1ee9494df61b2cbd05.mockapi.io/tp2/usuarios/usuarios' ,
         fotoIncognito:'https://icon-library.com/icon/unknown-person-icon-27.html',
-        usuarios: [],
+        usuarios: [], */
       }
     },
     methods: {
